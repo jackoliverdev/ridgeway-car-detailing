@@ -3,6 +3,7 @@ export const email = "info@ridgewaycardetailing.co.uk";
 /** Online booking and gift vouchers run in Ridgeway's own system. */
 export const bookHref = "https://app.centruscrm.ai/book/ridgeway-car-detailing";
 export const giftHref = "https://app.centruscrm.ai/gift/ridgeway-car-detailing";
+export const quoteHref = "https://app.centruscrm.ai/book/ridgeway-car-detailing/form/coating-quote";
 
 /** Wendy, the website assistant. The key only works on the domains allowed in Centrus CRM. */
 export const assistant = { src: "https://app.centruscrm.ai/chat/ridgeway-car-detailing/widget.js", key: "5b885765e143873c00ae740a" };
@@ -46,6 +47,7 @@ export const footer = {
   links: [
     { label: "Book online", href: bookHref },
     { label: "Gift vouchers", href: giftHref },
+    { label: "Coating quote", href: quoteHref },
     { label: "Prices", href: "/services#prices" },
     { label: "About us", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -305,7 +307,7 @@ export const contact = {
       {
         id: "quotes",
         title: "Coatings",
-        body: "Tell us the car and what you'd like. Gary will arrange a look at it under lights and send you a quote.",
+        body: "Tell us the car and what you'd like, on our quote form or here. Gary will look at it under lights and send you a price.",
       },
       {
         id: "trade",

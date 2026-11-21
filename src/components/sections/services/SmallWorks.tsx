@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { BulletList } from "@/components/ui/BulletList";
 import { RowList } from "@/components/ui/RowList";
 import { Section } from "@/components/ui/Section";
@@ -12,6 +13,7 @@ export function SmallWorks() {
           <SectionHeading title={smallWorks.title} intro={smallWorks.intro} />
           <h3 className="mt-8">{smallWorks.examplesTitle}</h3>
           <BulletList items={smallWorks.examples} className="mt-4" />
+          <ButtonLink href={smallWorks.quote.href} className="mt-8">{smallWorks.quote.label}</ButtonLink>
         </div>
         <div className="min-w-0 md:col-span-8">
           <h3>{smallWorks.stepsTitle}</h3>

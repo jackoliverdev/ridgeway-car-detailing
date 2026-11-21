@@ -91,6 +91,7 @@ export const smallWorks = {
   title: "Coatings",
   intro: "The bigger jobs, done at our unit by Ellis, who has corrected and coated everything from family cars to show cars.",
   examplesTitle: "Recent cars",
+  quote: { label: "Get a coating quote", href: "https://app.centruscrm.ai/book/ridgeway-car-detailing/form/coating-quote" },
   examples: ["A black Range Rover Sport, swirls corrected and coated", "A red Mazda MX-5, faded paint brought back", "A white Tesla Model 3, new car protection before it was delivered", "A grey Golf R, coated wheels and glass", "A Transporter camper, corrected and sealed for the summer"],
   stepsTitle: "How a coating goes",
   steps: [
