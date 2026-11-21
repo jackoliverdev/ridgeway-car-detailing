@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
+import Script from "next/script";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SkipLink } from "@/components/layout/SkipLink";
+import { assistant } from "@/content/site";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -31,6 +33,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        {/* Wendy, our website assistant, from Centrus CRM. She only shows on ridgewaycardetailing.co.uk. */}
+        <Script src={assistant.src} data-key={assistant.key} strategy="afterInteractive" />
       </body>
     </html>
   );

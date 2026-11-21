@@ -69,7 +69,7 @@ export function TradeDetail({ slug }: { slug: string }) {
       <Section className="border-t border-rule">
         <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:gap-12">
           <SectionHeading title={trades.closing.title} intro={trades.closing.body} />
-          <ButtonLink href={trades.contact.href} className="shrink-0">
+          <ButtonLink href={`${trades.contact.href}?service=${trade.slug}`} className="shrink-0">
             {trades.contact.label}
           </ButtonLink>
         </div>

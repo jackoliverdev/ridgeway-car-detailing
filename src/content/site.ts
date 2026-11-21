@@ -4,6 +4,9 @@ export const email = "info@ridgewaycardetailing.co.uk";
 export const bookHref = "https://app.centruscrm.ai/book/ridgeway-car-detailing";
 export const giftHref = "https://app.centruscrm.ai/gift/ridgeway-car-detailing";
 
+/** Wendy, the website assistant. The key only works on the domains allowed in Centrus CRM. */
+export const assistant = { src: "https://app.centruscrm.ai/chat/ridgeway-car-detailing/widget.js", key: "5b885765e143873c00ae740a" };
+
 export const phones = {
   serviceDesk: { label: "Bookings", number: "07700 900430" },
   outOfHours: { label: "Text or WhatsApp", number: "07700 900431" },
