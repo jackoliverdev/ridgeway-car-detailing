@@ -6,7 +6,7 @@ photos and words.
 
 - Every word is in `src/content/` (`site.ts`, `services.ts`, `team.ts`).
 - Colours are in `src/app/globals.css` (`--color-ridgeway*`).
-- "Book online" and "Gift vouchers" go to Ridgeway Car Detailing's booking and gift pages in Centrus CRM.
+- Booking is on our own site: the form sits on `/book`, and every "Book online" button opens it over the page (Centrus CRM's embed script, loaded in `src/app/layout.tsx`). How it looks and what it says are set in Centrus CRM (Booking portal > On your website). Gift vouchers go to Ridgeway Car Detailing's gift page in Centrus CRM.
 
 ```bash
 npm install

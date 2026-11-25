@@ -1,7 +1,14 @@
 export const email = "info@ridgewaycardetailing.co.uk";
 
-/** Online booking and gift vouchers run in Ridgeway's own system. */
-export const bookHref = "https://app.centruscrm.ai/book/ridgeway-car-detailing";
+/** Online booking and gift vouchers run in Ridgeway's own system (Centrus CRM). Booking is on our own site: the
+ * form sits on /book, and every "Book online" button opens it over the page (the embed script, loaded on every page),
+ * going to /book if the script hasn't loaded. How it looks and what it says are set in Centrus CRM (Booking > On your
+ * website), not here. NEXT_PUBLIC_CENTRUS_APP and NEXT_PUBLIC_CENTRUS_BOOKING point it at another copy of the app and organisation (for testing). */
+export const booking = {
+  app: process.env.NEXT_PUBLIC_CENTRUS_APP ?? "https://app.centruscrm.ai",
+  slug: process.env.NEXT_PUBLIC_CENTRUS_BOOKING ?? "ridgeway-car-detailing",
+};
+export const bookHref = "/book";
 export const giftHref = "https://app.centruscrm.ai/gift/ridgeway-car-detailing";
 export const quoteHref = "https://app.centruscrm.ai/book/ridgeway-car-detailing/form/coating-quote";
 
@@ -463,3 +470,9 @@ export const notFoundPage = {
 };
 
 export const skipLink = "Skip to content";
+
+/** The booking page on our own site. */
+export const bookPage = {
+  title: "Book online",
+  intro: "Choose your car, the service and a time that suits you. A £25 deposit secures your booking, or use your code if you’re paying cash.",
+};
